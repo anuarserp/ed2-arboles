@@ -34,4 +34,12 @@ public class ArbolInteger {
         }
     }
 
+    public void inorden(Arbin<Integer> r) {
+        if (r!= null) {
+            inorden(r.izq());
+            System.out.println(r.obtener());
+            inorden(r.der());
+        }
+    }
+
 }
