@@ -1,6 +1,6 @@
 package arboles;
 
-public class ArbolCaracteres {
+public class ArbolInteger {
 
     public Arbin<Integer> crear() {
         Arbin<Integer> raiz = new ArbinCol<Integer>(2);
@@ -28,8 +28,8 @@ public class ArbolCaracteres {
 
     public void inorden(Arbin<Integer> r) {
         if (r!= null) {
-            inorden(r.izq());
             System.out.println(r.obtener());
+            inorden(r.izq());
             inorden(r.der());
         }
     }
