@@ -26,11 +26,11 @@ public class ArbolInteger {
         return 1+peso(r.izq()) + peso(r.der());
     }
 
-    public void inorden(Arbin<Integer> r) {
+    public void preorden(Arbin<Integer> r) {
         if (r!= null) {
             System.out.println(r.obtener());
-            inorden(r.izq());
-            inorden(r.der());
+            preorden(r.izq());
+            preorden(r.der());
         }
     }
 
